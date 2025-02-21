@@ -1,0 +1,13 @@
+[Unit]
+Description=PTP4L
+StartLimitIntervalSec=0
+
+[Service]
+User=root
+Type=simple
+Restart=always
+EnvironmentFile=/etc/ptp4l.env
+ExecStart=/usr/sbin/ptp4l -i $INTERFACE -f /etc/ptp4l.conf -q -m
+
+[Install]
+WantedBy=multi-user.target

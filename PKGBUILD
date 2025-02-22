@@ -1,7 +1,7 @@
 # Maintainer: Doridian <archlinux at doridian dot net>
 
 pkgname=linuxptp-client
-pkgver=1.0
+pkgver=1.1
 pkgrel=1
 pkgdesc='Configure LinuxPTP as a client'
 arch=('any')

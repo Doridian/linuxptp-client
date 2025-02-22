@@ -1,11 +1,13 @@
 pkgbase = linuxptp-client
 	pkgdesc = Configure LinuxPTP as a client
 	pkgver = 1.3
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Doridian/linuxptp-client.git
 	arch = any
 	license = MIT
 	depends = linuxptp
+	backup = etc/ptp4l.conf
+	backup = etc/ptp4l.env
 	source = ptp4l.service
 	source = phc2sys.service
 	source = ptp4l.conf

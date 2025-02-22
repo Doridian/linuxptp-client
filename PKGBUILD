@@ -2,7 +2,7 @@
 
 pkgname=linuxptp-client
 pkgver=1.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Configure LinuxPTP as a client'
 arch=('any')
 url='https://github.com/Doridian/linuxptp-client.git'
@@ -19,6 +19,10 @@ sha256sums=(
     'SKIP'
     'SKIP'
     'SKIP'
+)
+backup=(
+    'etc/ptp4l.conf'
+    'etc/ptp4l.env'
 )
 
 build() {
